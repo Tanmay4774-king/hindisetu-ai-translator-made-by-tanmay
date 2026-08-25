@@ -1,4 +1,5 @@
 import { useState, useCallback, useEffect } from 'react';
+import { Analytics } from '@vercel/analytics/react';
 import { AnimatedBackground } from '@/components/AnimatedBackground';
 import { Navbar } from '@/components/Navbar';
 import { Hero } from '@/components/Hero';
@@ -85,6 +86,7 @@ function App() {
       </main>
 
       <Footer />
+      <Analytics />
     </div>
   );
 }
